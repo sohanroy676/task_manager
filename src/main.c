@@ -5,7 +5,7 @@
 #define MAX_TASKS 1024
 
 int cmp(const void *A, const void *B) {
-	return ((Task*)B)->priority - ((Task*)A)->priority;
+	return ((Task*)A)->priority - ((Task*)B)->priority;
 }
 
 void sort_tasks_by_priority(Task **task_list, int task_count) {
@@ -50,7 +50,7 @@ int main() {
 					printf("Terminated successfully.\n");
 					for (int i = 0; i < task_count; i++) {
 						if (task_list[i].pid == pid) {
-							task_list[i].priority = -100;
+							task_list[i].priority = 100;
 							break;
 						}
 					}

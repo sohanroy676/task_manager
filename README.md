@@ -23,3 +23,4 @@ This is a simple task manager written in C for OS Project. This project uses Lin
    cd build
    cmake ..
    make
+   ./task_manager
